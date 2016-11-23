@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9596739E1DE5738A00ADE561 /* ConstraintManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9596739C1DE5738A00ADE561 /* ConstraintManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		959673A51DE5739800ADE561 /* ConstraintManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959673A41DE5739800ADE561 /* ConstraintManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		959673991DE5738A00ADE561 /* ConstraintManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConstraintManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9596739C1DE5738A00ADE561 /* ConstraintManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstraintManager.h; sourceTree = "<group>"; };
 		9596739D1DE5738A00ADE561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959673A41DE5739800ADE561 /* ConstraintManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				9596739C1DE5738A00ADE561 /* ConstraintManager.h */,
 				9596739D1DE5738A00ADE561 /* Info.plist */,
+				959673A41DE5739800ADE561 /* ConstraintManager.swift */,
 			);
 			path = ConstraintManager;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 					959673981DE5738A00ADE561 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 35L77VM7C3;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959673A51DE5739800ADE561 /* ConstraintManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +245,7 @@
 		959673A21DE5738A00ADE561 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 35L77VM7C3;
@@ -252,6 +258,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexsander.khitev.ConstraintManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +266,7 @@
 		959673A31DE5738A00ADE561 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 35L77VM7C3;
